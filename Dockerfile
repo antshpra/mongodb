@@ -1,8 +1,8 @@
 FROM mongo:5.0.14
 
-RUN pwd
 RUN ls -al
 RUN ls -al data
-RUN ls -al data/db
 
-COPY mongod.conf .
+COPY sample.json data/db/collection.0
+
+RUN ls -al data/db
