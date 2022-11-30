@@ -1,3 +1,5 @@
+steps:
+
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'asia-southeast1-docker.pkg.dev/zero65/docker/mongodb:$COMMIT_SHA', '-f', 'Dockerfile', '.' ]
 
